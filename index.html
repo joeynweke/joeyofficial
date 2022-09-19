@@ -13,6 +13,14 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="header">
+            <header>
+                <h1>JosephNweke</h1>
+                <div class="time" id="time">
+                    
+                </div>
+            </header>
+        </div>
         
         <div class="top">
             <div  >
@@ -38,11 +46,11 @@
         </div>
 
         <div class="socials">
-            <a href="#">
-                <img src="images/OIP.JPG" class="github" alt="github">
+            <a href="https://github.com/joeynweke">
+                <img src="images/OIP.jpg" class="github" alt="github">
             </a>
             <a href="#">
-                <img src="images/twitter.SVG" class="twitter" alt="twitter">
+                <img src="images/twitter.svg" class="twitter" alt="twitter">
             </a>
         </div>
 
@@ -72,31 +80,31 @@
             <h2>Things I Love</h2>
 
             <div class="frontend">
-                <img src="images/front.png" width="90px" height="100px" alt="frontend">
+                <img src="images/front.png" width="90px" height="100px" alt="">
                 <h3>FRONT-END</h3>
             <p>I'm more focused on front end and love to work with Vanilla js, React js, HTML & CSS..</p>
             </div>
 
             
             <div class="frontend">
-                <img src="images/jslogo.png" width="90px" height="100px" alt="javascript">
+                <img src="images/jslogo.png" width="90px" height="100px" alt="">
                 <h3>JAVASCRIPT</h3>
             <p>I extremely love javascript and all it has to offer. I can't even express how much i love javascript in just few lines.</p>
             </div>
 
             <div class="frontend">
-                <img src="images/creative.jpg" width="90px" height="100px" alt="creative-coding">
+                <img src="images/creative.jpg" width="90px" height="100px" alt="">
                 <h3>CREATIVE CODING</h3>
             <p>I love creative coding because I do both coding and designing, making beautiful art with code is very satisfying</p>
             </div>
 
             <h2 class="aboutme" id="about">About Me</h2>
             <div class="about">
-                <img src="images/myphoto.jpg" class="joseph-img" alt="joseph">
-                <p>Hi I'm Joseph Nweke, a self-taught and passionate<br> Front-end developer from Nigeria. 
+                <img src="images/myphoto.jpg" class="joseph-img movement" alt="joseph">
+                <p>Hi I'm Joseph Nweke, a self-taught and passionate Front-end developer from Nigeria. 
                     I've been building stuff on the web since i was a kid, I've made several side projects and I also possess magical powers using react to build delightful interfaces.
                 </p>
-                <br>
+                
                 <p>I also love  open source development, I actively contribute to various notable open source projects it gives me a really wonderful feeling of fulfilment.</p>
                 <br>
 
@@ -104,7 +112,7 @@
                     <p>
                         "Simplicity is the best choice to be the Best."
                         <br><br>
-                        <i>- joseph nweke</i>
+                        <i>- Joseph Nweke</i>
                         <br>
                     </p>
                 </div>
@@ -113,7 +121,7 @@
                     <p>
                         "I don't believe in doing whatever, I do what it Takes."
                         <br><br>
-                        <i>- joseph nweke</i>
+                        <i>- Joseph Nweke</i>
                         <br>
                     </p>
                 </div>
@@ -122,7 +130,7 @@
                     <p>
                         "Creativity is the driver of an unstoppable surge called Passion."
                         <br><br>
-                        <i>- joseph nweke</i>
+                        <i>- Joseph Nweke</i>
                         <br>
                     </p>
                 </div>
@@ -137,29 +145,38 @@
             </div>
 
             <h2 id="projects">Side Projects</h2>
-            <div class="projects">
-                <div class="frontend">
+            <div class="project">
+                <div class="project-con">
                     <img src="images/front.png" width="90px" height="100px" alt="">
                     <h3>Task Remainder</h3>
                 <p>A task remainder that creates,save and delete tasks, with capabilities of adding as many tasks as possible. Created with HTML & CSS with Javascript..</p>
                 <div class="project">
-                    <a href="#" class="project-link">See Demo</a><br>
+                    <a href="#" class="project-link">See Demo</a>
                     <a href="#" class="project-link">Github</a>
                 </div>
                 </div>
             </div>
 
-            <h2 id="contact">Get In Touch</h2>
+            <h2><legend>Get In Touch</legend></h2>
             <div class="form-con">
-                <div class="form-inner">
-                <label for="email">Email</label><br>
-                <input type="email" name="email" class="email" id="email" placeholder="example@gmail.com"><br>
-                <label for="name">Name</label><br>
-                <input type="text" class="name" id="name" name="name" placeholder="John Doe"><br>
-                <label for="message">Message</label><br>
-                <textarea name="message" class="message" id="message" placeholder="Hi, there."></textarea><br>
-                <button class="btn">Send</button><br>
-                </div>
+                
+                <form id="contact" action="index.php" method="post">
+                    <fieldset>
+                        
+                        <div class="form-inner">
+                            <input type="hidden" name="submitted" id="submitted" value="1">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" class="email" id="email" placeholder="example@gmail.com"><br>
+                            <label for="name">Name</label><br>
+                            <input type="text" class="name" id="name" name="name" placeholder="John Doe"><br>
+                            <label for="message">Message</label><br>
+                            <textarea name="message" class="message" id="message" placeholder="Hi, there."></textarea><br>
+                            <button class="btn" value="submit">Send</button><br>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+
                 <br><br>
 
             </div>
@@ -173,6 +190,9 @@
         
             
     </div>
+    
+    <script type='text/javascript' src="validator.js"></script>
+    
     <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
