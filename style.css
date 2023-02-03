@@ -181,8 +181,6 @@ header nav > a:hover{
     z-index: 2;
 }
 
-
-
 .top{
     text-align: center;
     margin-top: 20vh;
@@ -318,8 +316,8 @@ a{
 
 .menulist{
     border: none;
-    width: 65vw;
-    height: 100vh;
+    width: 45vw;
+    height: 80vh;
     position: fixed;
     top: 0;
     right: 0;
@@ -484,8 +482,6 @@ a{
 
 .comment i{
     float:right;
-    font-size: 16px;
-    font-weight: 500;
 }
 
 .skills-con{
@@ -595,53 +591,6 @@ a{
     
 }
 
-    .heart{
-        height: 15px;
-        width: 15px;
-        
-    }
-
-    .smiley{
-        width: 15px;
-        height: 15px;
-    }
-
-.current-con{
-        border: 5px solid blue;
-        text-align: center;
-        width: 80vw;
-        height: auto;
-        line-height: 25px;
-        margin-top: 55px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
-        border-top-right-radius: 35px;
-        border-bottom-left-radius: 35px;
-        padding: 25px;
-        color: black;
-        font-size: 20px;
-        box-shadow: 0px 2px 17px #ccc;
-}
-
-.project-con{
-        text-align: center;
-        border: 5px solid red;
-        width: 80vw;
-        height: auto;
-        line-height: 25px;
-        margin-top: 55px;
-        margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
-        border-top-right-radius: 35px;
-        border-bottom-left-radius: 35px;
-        padding: 25px;
-        color: black;
-        font-size: 20px;
-        box-shadow: 0px 2px 17px #ccc;
-}
-
 .project{
     display: flex;
     flex-direction: column;
@@ -652,8 +601,7 @@ a{
 
 .project a{
     text-decoration: underline;
-    color: blue;
-    
+    color: rgb(56, 56, 56);
 }
 
 .project a:hover{
