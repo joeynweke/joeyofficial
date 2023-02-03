@@ -11,15 +11,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body id="body">
+    <div>
+        <header class="header" id="header">
+            <a href="index.html" class="logo-con">
+                <h2 id="logo" class="logo">Joey</h2>
+            </a>
+
+            <div class="mode" id="mode">
+                <div class="light" id="light">
+                    <div class="light-inner" id="light-inner"></div>
+                </div>
+                <div class="night hide" id="night">
+                    <div class="night-inner" id="night-inner"></div>
+                </div>
+            </div>
+
+            <nav>
+                <a class="anchor" href="index.html">Home</a>
+                <a class="anchor" href="#about">About</a>
+                <a class="anchor" href="#skills">Skills</a>
+                <a class="anchor" href="#projects">Projects</a>
+                <a class="anchor" href="#contact">Contact</a>
+                </nav>
+            </nav>
+        </header>
+    </div>
     <div class="wrapper">
         
         <div class="top">
-            <div  >
-                <nav class=" menulistoff menulist" id="menulist">
+            <div>
+                <nav class="hide" id="menulist">
                     
                     <i class="fa-solid fa-xmark closer menu2" id="menu-close"></i>
-                    
+                    <br>
                     <a href="index.html">Home</a>
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
@@ -28,41 +53,34 @@
                 </nav>
             </div>
 
-            <h3>Hello, I'm</h3>
-            <h1>JOSEPH NWEKE</h1>
-            <h3>CREATIVE FRONT-END WEB DEVELOPER</h3>
+            <div id="top-intro">
+                <h3>Hello, I'm</h3>
+                <h1>JOSEPH NWEKE</h1>
+                <h3>CREATIVE FRONT-END WEB DEVELOPER</h3>
+            </div>
         </div>
-        
-        <div id="modal">
-            <div class="top">
-
-        <div class="socials">
-            <a href="#">
-                <img src="/images/OIP.jpg" class="github" alt="github">
-            </a>
-            <a href="#">
-                <img src="/images/twitter.svg" class="twitter" alt="twitter">
-            </a>
-        </div>
-
-        <div class="intro">
-            <p>
-                1 class <i>Person</i> { <br>
-                    2 &emsp14; &emsp14; constructor() { <br>
-                        3 &emsp14; &emsp14; this.name = "<i>Joseph Nweke</i>";<br>
-                        4 &emsp14; &emsp14; this.hobby = ["<i>dev</i>", "<i>design</i>"];<br>
-                        5 &emsp14; &emsp14; this.age = new Date().getFullYear() - 1999;<br>
-
-                6 &emsp14; &emsp14; };<br>
-            7 };
-            </p>
-        </div>
-
         <div class="menu-con" id="menu-con">
             
             <div class="theopen">
                 <i  class="fa-solid fa-bars menu-open menu" id="menu-open"></i>
             </div>
+        </div>
+        
+        <div id="modal">
+
+
+        <div class="intro">
+
+            <p>
+                 class <i>Person</i> { <br>
+                     &emsp14; &emsp14; constructor() { <br>
+                         &emsp14; &emsp14; this.name = "<i>Joseph Nweke</i>";<br>
+                         &emsp14; &emsp14; this.hobby = ["<i>dev</i>", "<i>design</i>"];<br>
+                         &emsp14; &emsp14; this.age = new Date().getFullYear() - 1999;<br>
+
+                 &emsp14; &emsp14; };<br>
+             };
+            </p>
         </div>
 
         <br><br><br>
@@ -84,18 +102,21 @@
             </div>
 
             <div class="frontend">
-                <img src="/images/creative.jpg" width="90px" height="100px" alt="">
-                <h3>CREATIVE CODING</h3>
-            <p>I love creative coding because I do both coding and designing, making beautiful art with code is very satisfying</p>
+                <img src="/images/react.png" width="90px" height="100px" alt="">
+                <h3>REACT JS</h3>
+            <p>React is my best javascript library to build single page application, using it's components,
+                hooks, state, makes development easier.
+            </p>
             </div>
 
             <h2 class="aboutme" id="about">About Me</h2>
             <div class="about">
-                <img src="images/myphoto.jpg" class="joseph-img" alt="joseph">
+                <img src="images/myphoto.jpg" class="joseph-img movement" alt="joseph">
                 <p>Hi I'm Joseph Nweke, a self-taught and passionate<br> Front-end developer from Nigeria. 
                     I've been building stuff on the web since i was a kid, I've made several side projects and I also possess magical powers using react to build delightful interfaces.
                 </p>
                 <br>
+                <p>When I'm not working, i love gaming, my favorites are Clash of the titans, GTA: vice city, Need for speed, or I go for soccer training in a field nearby, playing as a center defender.</p>
                 <p>I also love  open source development, I actively contribute to various notable open source projects it gives me a really wonderful feeling of fulfilment.</p>
                 <br>
 
@@ -129,25 +150,96 @@
 
             <h2 id="skills">My Skillsets</h2>
             <div class="skills-con" >
-                <img src="images/html.png" alt="html5" class="skills">
-                <img src="images/css.webp" alt="css" class="skills">
-                <img src="images/jslogo.png" alt="javascript" class="skills">
-                <img src="images/react.png" alt="react" class="skills">
+                <div>
+                    <img src="images/html.png" alt="html5" class="skills">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="images/css.webp" alt="css" class="skills">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="images/jslogo.png" alt="javascript" class="skills">
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div>
+                    <img src="images/react.png" alt="react" class="skills">
+                    <p>REACT JS</p>
+                </div>
+                <div>
+                    <img src="images/ts.jpg" alt="typescript" class="skills">
+                    <p>TYPESCRIPT</p>
+                </div>
+                <div>
+                    <img src="images/OIP.jpg" alt="github" class="skills">
+                    <p>GITHUB</p>
+                </div>
+                <div>
+                    <img src="images/node.jpg" alt="node" class="skills">
+                    <p>NODE</p>
+                </div>
             </div>
 
-            <h2 id="projects">Side Projects</h2>
+            <h2 id="projects">Currently working on</h2>
             <div class="projects">
-                <div class="frontend">
+                <div class="frontend-b">
                     <img src="/images/front.png" width="90px" height="100px" alt="">
-                    <h3>Task Remainder</h3>
-                <p>A task remainder that creates,save and delete tasks, with capabilities of adding as many tasks as possible. Created with HTML & CSS with Javascript..</p>
+                    <h3>wallstoryvault</h3>
+                <p>A story telling app that covers different types of stories for kids and adults. Created with React.js and tailwind css..</p>
                 <div class="project">
                     <a href="https://wallstoryvault.netlify.app" target="_blank" class="project-link">See Demo</a>
                 </div>
                 </div>
             </div>
 
+            <h2 id="projects">Side Projects</h2>
+            <div class="projects projects-c">
+                <div class="frontend-c">
+                    <img src="/images/front.png" width="90px" height="100px" alt="">
+                    <h3>tranz-delivery</h3>
+                <p>A company courier and logistics website, which offer package tracking. Created with HTML & CSS with Javascript..</p>
+                <div class="project">
+                    <a href="https://tranz-delivery.netlify.app" target="_blank" class="project-link">See Demo</a>
+                </div>
+                </div>
+
+                <div class="frontend-c">
+                    <img src="/images/front.png" width="90px" height="100px" alt="">
+                    <h3>quizonia</h3>
+                <p>A quiz app that challenge users on to answer serveral questions on a choosen topic. Created with HTML & CSS with Javascript..</p>
+                <div class="project">
+                    <a href="https://quizonia.netlify.app" target="_blank" class="project-link">See Demo</a>
+                </div>
+                </div>
+
+                <div class="frontend-c">
+                    <img src="/images/front.png" width="90px" height="100px" alt="">
+                    <h3>quotemji</h3>
+                <p>A simple app for quote lovers, it display random quotes at interval. Created with HTML & CSS with Javascript..</p>
+                <div class="project">
+                    <a href="https://quotemji.netlify.app" target="_blank" class="project-link">See Demo</a>
+                </div>
+                </div>
+
+                <div class="frontend-c">
+                    <img src="/images/front.png" width="90px" height="100px" alt="">
+                    <h3>giffycash</h3>
+                <p>A web app to sell your physical and digital giftcards. Created with HTML & CSS with Javascript..</p>
+                <div class="project">
+                    <a href="https://quotemji.netlify.app" target="_blank" class="project-link">See Demo</a>
+                </div>
+                </div>
+            </div>
+
             <h2 id="contact">Get In Touch</h2>
+            <div class="socials" id="socials">
+                <a href="#">
+                    <img src="/images/OIP.jpg" class="github" alt="github">
+                </a>
+                <a href="#">
+                    <img src="/images/twitter.svg" class="twitter" alt="twitter">
+                </a>
+            </div>
             <div class="form-con">
                 <div class="form-inner">
                 <label for="email">Email</label><br>
@@ -158,20 +250,16 @@
                 <textarea name="message" class="message" id="message" placeholder="Hi, there."></textarea><br>
                 <button class="btn">Send</button><br>
                 </div>
-                <br><br>
+                <br>
 
             </div>
             
             </div>
-
-            <div class="foot">
-                <footer>
-                    &copy; Made with <span><img src="images/red-heart.png" class="heart" alt=""></span> by Joey <img src="images/smiley.png" class="smiley" alt="">
-                </footer>
-            </div>
-        
-        
-            
+    </div>
+    <div class="foot">
+        <footer>
+            &copy; Made with <span><img src="images/red-heart.png" class="heart" alt=""></span> by Joey <img src="images/smiley.png" class="smiley" alt="">
+        </footer>
     </div>
     <script src="script.js" type="text/javascript"></script>
 </body>

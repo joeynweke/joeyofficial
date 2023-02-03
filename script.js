@@ -8,21 +8,19 @@ const onMenu = () => {
 
     
     menu.onclick = () => {
-        menulist.style.display = 'none'
-
-        menulist.style.display === 'none' ?
-        menulist.style.display = 'flex' : 
-        menulist.style.display = 'none'
+       if(menulist.className === 'hide'){
+        menulist.classList = 'menulist'
+       }
     }
 
     menuClose.onclick = () => {
-        menulist.style.display = 'none'
+        menulist.classList = 'hide'
     }
 
     modal.onclick = () => {
-        menulist.style.display === 'flex' ?
-        menulist.style.display = 'none':
-        null
+        if(menulist.className === 'menulist'){
+            menulist.classList = 'hide'
+        }
     }
 }
 onMenu();
@@ -33,10 +31,13 @@ const mode = () => {
     const socials  = document.getElementById("socials")
     const modeBtn = document.getElementById("mode-btn");
     const header = document.getElementById("header")
+    const logo = document.getElementById("logo")
     const p = document.getElementsByClassName("p")
     let theMode = document.querySelector("#mode")
     let light = document.querySelector("#light")
     let dark = document.querySelector("#night")
+    let topIntro = document.querySelector("#top-intro")
+    let anchor = document.querySelectorAll(".anchor")
     theMode.onclick = () => {
         setTimeout(() => {
 
@@ -44,9 +45,14 @@ const mode = () => {
             light.classList.add('hide')
             dark.classList.remove('hide')
 
-            theMode.style.backgroundColor = 'rgb(21, 20, 20)'
-            header.style.backgroundColor = 'black'
+            
+            header.style.backgroundColor = 'black';
+            logo.style.backgroundColor = 'rgba(234, 126, 3, 0.956)';
+            anchor.forEach(element => {
+                element.style.color = 'rgba(234, 126, 3, 0.956)';
+            });
             body.style.background = 'black'
+            topIntro.style.color = 'rgb(237, 225, 225)'
             socials.style.background = 'white';
             for(var i = 0; i < p.length; i++){
                 p[i].style.color = 'white'
@@ -55,10 +61,11 @@ const mode = () => {
         } else{
             dark.classList.add('hide')
             light.classList.remove('hide')
-            theMode.style.backgroundColor = 'white'
+            logo.style.backgroundColor = 'white';
             header.style.backgroundColor = 'white'
             socials.style.background = 'white';
             body.style.background = 'white'
+            topIntro.style.color = 'rgb(56, 56, 56)'
             for(var i = 0; i < p.length; i++){
                 p[i].style.color = 'black'
         }}
