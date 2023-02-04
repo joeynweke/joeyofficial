@@ -41,10 +41,9 @@ const mode = () => {
     theMode.onclick = () => {
         setTimeout(() => {
 
-        if(dark.className.includes('hide')){
-            light.classList.add('hide')
-            dark.classList.remove('hide')
-
+        if(theMode.alt === 'dark mode'){
+            theMode.src = 'images/light.png';
+            theMode.alt = 'light mode';
             
             header.style.backgroundColor = 'black';
             logo.style.backgroundColor = 'rgba(234, 126, 3, 0.956)';
@@ -59,8 +58,8 @@ const mode = () => {
         }
 
         } else{
-            dark.classList.add('hide')
-            light.classList.remove('hide')
+            theMode.src = 'images/night.png';
+            theMode.alt = 'dark mode'
             logo.style.backgroundColor = 'white';
             header.style.backgroundColor = 'white'
             socials.style.background = 'white';

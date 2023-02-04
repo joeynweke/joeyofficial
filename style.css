@@ -48,16 +48,21 @@ html {
 }
 
 .mode{
-    width: 75px;
+    text-align: center;
+    width: 35px;
     height: 35px;
-    border: none;
-    background-color: rgb(237, 225, 225);
+    
+    background-color: none;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
     position: relative;
+}
+
+.mode img{
+    width: 100%;
 }
 
 .hide{
